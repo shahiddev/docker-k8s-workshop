@@ -10,6 +10,7 @@ Welcome to this NDC Minnesota Docker & Kubernetes workshop, this page will guide
 ## Hardware requirements
 
 PC with support for virtualisation (e.g. Windows 10 Pro with Hyper-V enabled)
+or
 Mac (note: Workshop will be run using Windows so some commands may need to be adapted)
 
 ## Software
