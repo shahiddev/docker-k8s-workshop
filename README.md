@@ -19,9 +19,7 @@ On Windows we recommend using [Chocolatey](https://chocolatey.org/install) to in
 
 * Docker for Windows (or Mac) - https://www.docker.com/products/docker-desktop (to minimise any issues please install stable channel)
 * Git - https://git-scm.com/downloads
-* Visual Studio 2017/19 (incl. Free Community Edition) - https://visualstudio.microsoft.com/downloads/
-or 
-* Visual Studio Code - https://code.visualstudio.com/ 
+* Visual Studio 2017/19 (incl. Free Community Edition) - https://visualstudio.microsoft.com/downloads/ or Visual Studio Code - https://code.visualstudio.com/ 
 * Current Dotnet Core SDK - https://dotnet.microsoft.com/download
 * Azure command line - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
   
