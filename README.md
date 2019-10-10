@@ -3,7 +3,7 @@ Workshop covering Docker and Kubernetes
 
 # Welcome
 
-Welcome to this NDC Minnesota Docker & Kubernetes workshop, this page will guide you through ensuring you have the pre-requisites installed and ready before the start of the workshop.
+Welcome to this NDC Docker & Kubernetes workshop, this page will guide you through ensuring you have the pre-requisites installed and ready before the start of the workshop.
 
 **Note**: To avoid issues with corporate IT policies if possible please bring a personal laptop with you.
 
