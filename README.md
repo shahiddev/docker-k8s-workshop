@@ -11,7 +11,7 @@ Welcome to this NDC Docker & Kubernetes workshop, this page will guide you throu
 
 PC with support for virtualisation (e.g. Windows 10 Pro with Hyper-V enabled)
 or
-Mac (note: Workshop will be run using Windows so some commands may need to be adapted)
+Mac (note: Workshop will be run using Windows so some commands may need to be slightly adapted)
 
 ## Software
 
@@ -29,4 +29,7 @@ A DockerHub account (free) - https://hub.docker.com/signup
 
 **Note**: If you  created a DockerHub account before April 25th 2019, please ensure you've recently changed your password due to [April 2019 security breach](https://success.docker.com/article/docker-hub-user-notification)
 
-Azure account - If you have access to an Azure subscription for those exercises that require it please be prepared to use this. Alternative you can sign up to a free trial (https://azure.microsoft.com/free/) access to a subscription may be available to those who do not have any other options.
+Azure account - If you have access to an Azure subscription for those exercises that require it please be prepared to use this. Alternative you can sign up to a free trial (https://azure.microsoft.com/free/) (this requires a credit card to sign up). Please contact the workshop organiser ASAP if you are unable to access an Azure account.
+
+If you would prefer to use an alternative managed Kubernetes service you are welcome to so so,although some of the hands-on exercises may not be applicable (e.g. setting up AKS). The workshop organiser(s) will try and support all managed Kubernetes services but cannot gaurantee this.
+
