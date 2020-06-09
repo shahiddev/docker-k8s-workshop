@@ -19,6 +19,7 @@ On Windows we recommend using [Chocolatey](https://chocolatey.org/install) to in
 * Visual Studio 2017/19 (incl. Free Community Edition) - https://visualstudio.microsoft.com/downloads/ or Visual Studio Code - https://code.visualstudio.com/ 
 * Current Dotnet Core SDK - https://dotnet.microsoft.com/download
 * Azure command line - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+* (optional) Helm - https://helm.sh
   
 ## Accounts
 
