@@ -1,6 +1,3 @@
-# docker-k8s-workshop
-Workshop covering Docker and Kubernetes
-
 # Welcome
 
 Welcome to this NDC Docker & Kubernetes workshop, this page will guide you through ensuring you have the pre-requisites installed and ready before the start of the workshop.
