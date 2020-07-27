@@ -1,25 +1,9 @@
 ## Accessing the Kubernetes Dashboard
 
-Before you can access the Kubernetes dashboard you need to grant permissions
+The Kubernetes Dashboard component is due to be switched off in AKS clusters from v1.18 onwards.
 
-Firstly ensure you have set the local context by getting the credentials:
+Please see the AKS documentation around accessing the dashboard, the approach you need to take will depend on the version of AKS you're running.
 
-```cmd
-az aks get-credentials -n k8s-workshop -g k8s-workshoprg
-```
-
-Create the permissions by running:
-
-```cmd
-kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
-```
-
-We can now view the dashboard by executing:
-
-```cmd
-az aks browse -n k8s-workshop -g k8s-workshoprg
-```
-
-This command will create a secure tunnel from your machine to the cluster and pop open a browser to display the Kubernetes dashboard.
+https://docs.microsoft.com/en-us/azure/aks/kubernetes-dashboard
 
 **Important** Do not be tempted to expose the Kubernetes dashboard publicly (via a loadbalancer service) without first understanding the risks - there have been several cluster hijacks (e.g. for crypto mining due to people doing this)
