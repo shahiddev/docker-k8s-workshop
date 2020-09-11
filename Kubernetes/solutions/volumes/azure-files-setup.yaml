@@ -11,6 +11,8 @@ mountOptions:
   - gid=1000
 parameters:
   skuName: Standard_LRS
+#  location: <azure region>
+#  storageAccount: <name of account>
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
