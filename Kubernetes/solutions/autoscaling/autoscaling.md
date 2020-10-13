@@ -11,23 +11,31 @@ The sample app is doing nothing more than a bit of computation which is going to
 ### Steps
 
 1. Deploy the manifest files in this folder (these are a deployment and service and the horizontal pod autoscaler)
-2. Run the following command to create a temporary pod which is going to be used to generate the load `kubectl run -it --rm load-generator --image=busybox /bin/sh`
-3. Once you are in the pod you can execute the following command `while true; do wget -q -O- http://php-apache; done` this command is going to call the application we deployed in step 1 repeatedly in a loop until we break out of the loop
-4. Open a new terminal and query the hpa by running `kubectl get hpa` you should see something similar to this 
+2. Ensure the HPA is ready, when you run `kubectl get hpa` it should look something like this:
 
    ```cmd
     NAME             REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
     php-apache-hpa   Deployment/php-apache   0%/50%    1         10        1          2m51s
 
    ```
-5. It may take a minute or two but eventually you should see the HPA showing the load is above the target 50% and the replica count should start increasing
+   If the `TARGETS` column is showing ` <unknown>/50%` you need wait a few seconds until it's ready, when the HPA is ready it will display  `0%/50%`)
+3. Run the following command to create a temporary pod which is going to be used to generate the load `kubectl run -it --rm load-generator --image=busybox /bin/sh`
+4. Once you are in the pod you can execute the following command `while true; do wget -q -O- http://php-apache; done` this command is going to call the application we deployed in step 1 repeatedly in a loop until we break out of the loop
+5. Open a new terminal and query the hpa by running `kubectl get hpa` you should see something similar to this 
+
+   ```cmd
+    NAME             REFERENCE               TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+    php-apache-hpa   Deployment/php-apache   0%/50%    1         10        1          2m51s
+
+   ```
+6. It may take a minute or two but eventually you should see the HPA showing the load is above the target 50% and the replica count should start increasing
    
    ```cmd
     NAME             REFERENCE               TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
     php-apache-hpa   Deployment/php-apache   249%/50%   1         10        4          4m
    ```
-6. You can query the number of pods by running `kubectl get pods` and you should see the additional replicas
-7. Kill the load by pressing `CTRL+C` in the terminal which is currently running the load test
+7. You can query the number of pods by running `kubectl get pods` and you should see the additional replicas
+8. Kill the load by pressing `CTRL+C` in the terminal which is currently running the load test
 
 
 ### Clean up
