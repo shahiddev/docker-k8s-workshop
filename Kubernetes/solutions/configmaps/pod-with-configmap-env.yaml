@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: dapi-test-pod
+  name: test-pod-env
 spec:
   containers:
     - name: test-container
-      image: k8s.gcr.io/busybox
-      command: [ "/bin/sh", "-c", "env" ]
+      image: shahiddev/k8s:1.0
       env:
         # Define the environment variable
         - name: SPECIAL_LEVEL_KEY
